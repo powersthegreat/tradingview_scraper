@@ -1,5 +1,5 @@
-#importing os, time, and pywin to make things run a little smoother, more specifically pywin gets rid of usb
-#errors, os helps path of webdriver be called faster, and time allows for rest periods while data loads
+# importing os, time, and pywin to make things run a little smoother, more specifically pywin gets rid of usb
+# errors, os helps path of webdriver be called faster, and time allows for rest periods while data loads
 import pywin
 import os
 import time
@@ -22,13 +22,13 @@ import pandas as pandas
 #various urls from tradingviews website used to extract data from, each url has about 8 seperate tables that 
 #data is pulled from
 urls = [
-    'https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/',
-    # 'https://www.tradingview.com/markets/stocks-usa/market-movers-active/', 
-    # 'https://www.tradingview.com/markets/stocks-usa/market-movers-losers/', 
-    # 'https://www.tradingview.com/markets/stocks-usa/market-movers-most-volatile/', 
-    # 'https://www.tradingview.com/markets/stocks-usa/market-movers-overbought/', 
-    # 'https://www.tradingview.com/markets/stocks-usa/market-movers-oversold/'
-       ]
+    # 'https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/',
+    #'https://www.tradingview.com/markets/stocks-usa/market-movers-active/', 
+    #'https://www.tradingview.com/markets/stocks-usa/market-movers-losers/', 
+    #'https://www.tradingview.com/markets/stocks-usa/market-movers-most-volatile/', 
+    #'https://www.tradingview.com/markets/stocks-usa/market-movers-overbought/', 
+    #'https://www.tradingview.com/markets/stocks-usa/market-movers-oversold/'
+  ]
 
 #initiating driver instance and sending that instance the path where the driver is stored
 PATH = "C:\Program Files (x86)\chromedriver.exe"

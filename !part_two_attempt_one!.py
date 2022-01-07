@@ -113,6 +113,8 @@ for ticker in ticker_list:
     ticker_list_2.append(good)
 
 tickers_readings_dict = dict(zip(ticker_list_2, tickers_readings_list))
+print(tickers_readings_dict)
+print("\n")
 
 buy_signals_count = []
 
@@ -126,6 +128,4 @@ final_dict = dict(zip(ticker_list_2, buy_signals_count))
 marklist = sorted(final_dict.items(), key=lambda x:x[1], reverse = True)
 sortdict = dict(marklist)
 print(sortdict)
-
-
 
